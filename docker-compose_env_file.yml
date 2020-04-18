@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  webcam:
+    container_name: test_container
+    restart: always
+    image: test:latest
+    env_file:
+      - parameters.env
+    dns:
+      - 127.0.0.1
+      - 1.1.1.1
